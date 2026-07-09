@@ -10,3 +10,5 @@ elif entrada == 'nao':
 
 else:
     print('Não seja confuso(a)!')
+
+    
