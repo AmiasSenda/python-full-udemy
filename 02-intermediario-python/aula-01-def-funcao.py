@@ -10,7 +10,8 @@ parâmetros e retornar um valor específico...
 def teste (a):
     num1 = int(a)
     i = 1
-    print('Tabuada dos ',num1)
+    print()
+    print('Eis a tabuada dos:  ',num1)
     print()
     while i <= 12:
         print (num1,' X ',i,' = ', num1 * i)
@@ -21,7 +22,12 @@ def teste (a):
 
 def saudacao (nome):
     n = nome
-    print('Bom dia, ',n, 'Prazer!')
+    print('Hi, ',n, 'you are very friendly!')
+    print()
 
-saudacao('Amias')
-teste(6)
+
+name = input('Digite o seu Nome: ')
+tb = int(input('Digite um número: '))
+
+teste(tb)
+saudacao(name)
