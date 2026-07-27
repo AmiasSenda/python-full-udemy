@@ -12,9 +12,17 @@
         #heading{
             background: red;
         }
-        #heading h1 a{
+        #heading div{
+            display: 50%;
+            display: flex;
+            background: black;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        #heading .h1 a{
             font-family: 'Courier New', Courier, monospace;
             font-size: 16px;
+            padding: 15px;  
             color: white;
         }
         
@@ -22,9 +30,15 @@
 </head>
 <body>
     <header id="heading"> 
-        <h1>
+        <div>
+        <h1 class="h1">
              <a href="#">ZABBIX</a>
         </h1>
+          <h2 class="h1">
+             <a href="#">ZABBIX</a>
+        </h2>
+        </div>
+        
     </header>
       
 </body>
