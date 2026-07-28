@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.pai h1+p{
+    color: blue;
+}
+
+.pai p+h1{
+    color:red;
+}
+

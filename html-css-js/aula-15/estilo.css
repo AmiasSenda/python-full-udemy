@@ -1,7 +1,30 @@
 *{
     margin: 0;
     padding: 0;
-    align-items: center;
-    background: green;
+
+}
+.pri{
+    color: black;
     text-align: center;
+}
+
+body div section {
+    font-size: medium;
+}
+h1{
+    font-family: sans-serif;
+}
+.italic{
+    font-style: italic;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 14px;
+
+}
+
+.tese{
+    background: black;
+    color: white;
 }
