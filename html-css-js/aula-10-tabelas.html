@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML </title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table td, table th{
+            border: 1px solid #ccc;
+            padding: 5px;
+
+
+        }
+        .head-table{
+             background-color: black;
+            color: white;
+        }
+        table caption{
+            caption-side: bottom;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        tfoot td{
+            background: #ddd;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Tabelas em HTML5</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus, maxime fugiat corporis sit eius dolore? Veritatis officiis placeat, 
+        consequatur totam dignissimos doloremque laborum nihil deleniti quibusdam ipsam neque. In.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque labore, repudiandae iure vitae cupiditate neque nihil possimus, 
+        nostrum laboriosam provident corrupti aut eum id eligendi soluta quas ullam dignissimos corporis?
+    </p>
+    <table>
+        <caption>
+            testar a Descrição
+        </caption>
+        <thead class="head-table">
+            <tr>
+                <th>Nº</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Banana</td>
+                <td>259,00 kzs</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Morango</td>
+                <td>765,99 kzs</td>
+                <td>1000</td>
+            </tr>
+               <tr>
+                <td rowspan="2">03</td>
+                <td>Morango</td>
+                <td>765,99 kzs</td>
+                <td>1000</td>
+            </tr>
+             <tr>
+                <td>Morango</td>
+                <td>765,99 kzs</td>
+                 <td>copiado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total: </td>
+                <td colspan="3">Valor não determinado.</td>
+                
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
