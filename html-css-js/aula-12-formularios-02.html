@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários - 02</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        label{
+            cursor: pointer;
+        }
+        .title{
+            font-style: oblique;
+
+        }
+    </style>
 </head>
 <body>
-    <form action="" method="get" target="_blank" autocomplete="off">
-        <p>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p  class="title">
             O meu formulário
+        </p>
+        <p>
+            <label for="">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="digite o seu nome"> <br><br>
+             <label for="">Sobrenome: </label>
+            <input type="text" name="nome" id="nome" placeholder="digite o seu sobrenome">
+                        <br>
+                <label for="">Maior de idade ? </label>
+            <input type="checkbox" name="nome" id="nome"value="Sim" required>
+               <br>
+               <p>Gênero
+                <br>
+                <label for="">Femenino</label>
+                <input type="radio" name="" id=""> <br>
+                <label for="">Masculino</label>
+                <input type="radio" name="" id=""> <br>
+                <label for="">Outro(a)</label>
+                <input type="radio" name="" id="">
+               </p>
+       
+            <button type="reset">reset</button>
+            <button type="submit">submit</button>
+
         </p>
     </form>
     
