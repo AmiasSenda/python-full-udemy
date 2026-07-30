@@ -1,0 +1,2 @@
+from exercicios_produtos.modulos_produtos import produtos
+
