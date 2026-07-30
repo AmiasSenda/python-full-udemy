@@ -5,7 +5,9 @@ def multiplica (x,y):
     return x*y
 
 def criar_funcao(funcao, *args):
-    return funcao(*args)
+    def interna (*args):
+        return funcao(*args)
+    return interna
 
 
 soma_com_cinco = criar_funcao(soma, 5)
