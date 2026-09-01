@@ -4,7 +4,7 @@ import os
 quantBebida=0
 precoBebida=0
 NomeBebida=0
-totalBebida=1
+total=0
 
 def menu_bebidas():
     os.system('cls')
@@ -105,9 +105,9 @@ def menu_bebidas():
         print("")
 
 
-
-    totalBebida = precoBebida *quantBebida
-    resultado = f"{totalBebida:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+   
+    total = precoBebida *quantBebida
+    resultado = f"{total:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     preco = f"{precoBebida:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     print("__________________________________________________________")
     print("FACTURA BEBIDA")
@@ -119,3 +119,4 @@ def menu_bebidas():
     print('Total: ',resultado, ' KZS')
     print("__________________________________________________________")
     print("")
+
