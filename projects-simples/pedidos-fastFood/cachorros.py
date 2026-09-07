@@ -16,10 +16,11 @@ menu = {
         3: {"nome": "Cachorro com Bacon", "preco": 3500},
         4: {"nome": "Cachorro Especial", "preco": 4000},
         5: {"nome": "Cachorro Completo", "preco": 4500}
-    }
+}
 
 def menu_cachorro():
 #print(menu[3]["nome"],' | ',menu[3]["preco"])
+    os.system("cls")
     print("MENU FASTFOOD - CACHORRO - QUENTE")
     print("_______________________________________________")
     for index,dados in menu.items():
@@ -36,20 +37,20 @@ def menu_cachorro():
         if (Op == idA):
             NomeFood = dados["nome"]
             precoFood =dados["preco"]
-
-
     quantFood = int(input("digite a quantidade: "))
 
 
     totalFood = precoFood *quantFood
     resultado = f"{totalFood:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     preco = f"{precoFood:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+    os.system('cls')
     print("__________________________________________________________")
     print("FACTURA FASTFOOD - CACHORRO - QUENTE")
     print("__________________________________________________________")
-
     print("FASTFOOD escolhido: ",NomeFood)
     print("Preço: ",preco,' KZS')
     print("Quantidade: ",quantFood)
     print('Total: ',resultado, ' KZS')
     print("__________________________________________________________")
+
+    return totalFood
