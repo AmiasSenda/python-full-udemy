@@ -1,5 +1,7 @@
 from bebidas import menu_bebidas
-from facturaGeral import total
+import bebidas
+
+totalBebidas= 0
 
 print("BEM-VINDO AO FASTHAPPY")
 print("______________________________")
@@ -13,6 +15,7 @@ print("5- EXTRAS")
 print("")
 opcao = input("DIGITE A SUA OPÇÃO: ") 
 
+
 match opcao:
     case '1':
         print()
@@ -21,7 +24,8 @@ match opcao:
     case '3':
         print()
     case '4':
-        print(menu_bebidas())
+        totalBebidas =menu_bebidas()
+        print(totalBebidas)
     case '5':
         print()
     case _:
@@ -30,4 +34,4 @@ match opcao:
 
 ftTotal= input("Deseja verificar a factura final ? (S/N)")
 if (ftTotal =='1'):
-    print(total())
+    print(totalBebidas)

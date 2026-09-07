@@ -1,7 +1,7 @@
 import bebidas
 import os
 
-def  total():
-    os.system("cls")
+
+os.system("cls")
+total_bebidas =bebidas.menu_bebidas
     
-    print("Total de Bebida: ",bebidas.total)
