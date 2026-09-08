@@ -1,6 +1,8 @@
-import psycopg2 
+import psycopg2
+
 
 def conectar():
+
     conexao = psycopg2.connect(
         host="localhost",
         database="fastfood",
@@ -9,6 +11,6 @@ def conectar():
         port="5432"
     )
 
-print("Conexão realizada com sucesso!")
+    print("Conexão realizada com sucesso!")
 
-conexao.close()
+    return conexao
