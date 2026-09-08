@@ -1,15 +1,21 @@
 from bebidas import menu_bebidas
 from cachorros import menu_cachorro
+from extras import menu_extras
+from Pizzas import menu_pizzas
+from Hamburguers import menu_hamburguers
 import bebidas
 import os
 
 totalBebidas= 0
 totalCachorro = 0
+totalExtras = 0
+totalPizza = 0
+totalHamburguers = 0
 total =0
 condicao = True
 cond = 0
-
-while condicao: 
+opcao = 0
+def menu_principal():
     os.system('cls')
     print("BEM-VINDO AO FASTHAPPY")
     print("______________________________")
@@ -21,14 +27,20 @@ while condicao:
     print("4- BEBIDAS")
     print("5- EXTRAS")
     print("")
-    opcao = input("DIGITE A SUA OPÇÃO: ") 
+    Valor = input("DIGITE A SUA OPÇÃO: ") 
+    return Valor
 
+while condicao: 
 
+    opcao = menu_principal()
+    print(opcao)
     match opcao:
         case '1':
-            print()
+            totalPizza += menu_pizzas()
+            print(totalPizza)
         case '2':
-            print()
+            totalHamburguers += menu_hamburguers()
+            print(totalHamburguers)
         case '3':
             totalCachorro+= menu_cachorro()
             print(totalCachorro)
@@ -37,9 +49,9 @@ while condicao:
             totalBebidas +=menu_bebidas()
             print(totalBebidas)
         case '5':
+            totalExtras += menu_extras()
+            print(totalExtras)
             print()
-        case _:
-            print("Opção inexistente...")
 
     #os.system('cls')
     cond = input("Deseja permanecer uma outra escolha ou nem por isso ? (0/1)")
@@ -49,12 +61,23 @@ os.system('cls')
 ftTotal= input("Deseja verificar a factura final ? (S/N)")
 if (ftTotal =='1'):
     bebidas = f"{totalBebidas:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+    pizza = f"{totalPizza:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     cachorro = f"{totalCachorro:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
-    total = totalBebidas + totalCachorro
+    extras = f"{totalExtras:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+    hamburguers = f"{totalHamburguers:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+    total = totalBebidas + totalCachorro + totalExtras + totalPizza + totalHamburguers
+    totalTudo = f"{total:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
     os.system('cls')
     print("----------------------------------------------------")
     print("Factura Geral")
     print("_____________________________________________________")
-    print('Total do menu Bebidas: ',bebidas)
-    print('Total do menu Cachorro Quente: ',cachorro)
-    print("Total da Factura: ", total,'KZS')
+    print('Total do menu Pizzas: ',pizza, 'KZS')
+    print('Total do menu Cachorro-Quente: ',cachorro, 'KZS')
+    print('Total do menu Hamburguers: ',hamburguers, 'KZS')
+    print('Total do menu Bebidas: ',bebidas, 'KZS')
+    print('Total de Extras solicitados: ',extras,'KZS')
+    print(".......................................................")
+    print()
+
+    print("Total da Factura: ", totalTudo,'KZS')
+    print("")

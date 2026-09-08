@@ -22,40 +22,43 @@ menu = {
 
 
 #print(menu[3]["nome"],' | ',menu[3]["preco"])
-print("MENU FASTFOOD")
-print("_______________________________________________")
-for index,dados in menu.items():
-    idPro= index
-    nomePro = dados["nome"]
-    precoPro = dados["preco"]
-    print(idPro, ' - ', nomePro, ' - ', precoPro)
-print("")
+def menu_hamburguers():
+    print("MENU FASTFOOD")
+    print("_______________________________________________")
+    for index,dados in menu.items():
+        idPro= index
+        nomePro = dados["nome"]
+        precoPro = dados["preco"]
+        print(idPro, ' - ', nomePro, ' - ', precoPro)
+    print("")
 
-Op=int(input("Digite a sua escolha: "))   
+    Op=int(input("Digite a sua escolha: "))   
 
-for index,dados in menu.items():
-    idA = index
-    if (Op == idA):
-        NomeFood = dados["nome"]
-        precoFood =dados["preco"]
+    for index,dados in menu.items():
+        idA = index
+        if (Op == idA):
+            NomeFood = dados["nome"]
+            precoFood =dados["preco"]
 
 
-quantFood = int(input("digite a quantidade: "))
+    quantFood = int(input("digite a quantidade: "))
 
 
 
     
 
-totalFood = precoFood *quantFood
-resultado = f"{totalFood:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
-preco = f"{precoFood:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
-print("__________________________________________________________")
-print("FACTURA FASTFOOD")
-print("__________________________________________________________")
+    totalFood = precoFood *quantFood
+    resultado = f"{totalFood:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+    preco = f"{precoFood:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+    print("__________________________________________________________")
+    print("FACTURA FASTFOOD")
+    print("__________________________________________________________")
 
-print("FASTFOOD escolhido: ",NomeFood)
-print("Preço: ",preco,' KZS')
-print("Quantidade: ",quantFood)
-print('Total: ',resultado, ' KZS')
-print("__________________________________________________________")
-print("")
+    print("FASTFOOD escolhido: ",NomeFood)
+    print("Preço: ",preco,' KZS')
+    print("Quantidade: ",quantFood)
+    print('Total: ',resultado, ' KZS')
+    print("__________________________________________________________")
+    print("")
+
+    return totalFood
