@@ -1,6 +1,6 @@
 """
 Funções que vamos estudar:
-findall 
+findall: 
 search : pesquisa um determinado campo ou uma outra coisa.
 sub: subistituir
 compile:compilar
