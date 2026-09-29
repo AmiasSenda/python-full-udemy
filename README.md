@@ -5,3 +5,5 @@ Nesse momento o foco é:
 - Básico de Python: Terminado!
 - Python Intermediário: a fazer
 - HTML E CSS
+- Comecei também com a leadingPage
+- Estou estudando também sobre Expressões regulares | Início
