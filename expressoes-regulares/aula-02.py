@@ -4,8 +4,6 @@
 # [] Conjunto de caracteres
 
 import re
-
-
 texto = '''
 João trouxe flores para sua amada namorada em 10 de janeiro de 1970,
 Maria era o nome dela.
@@ -18,10 +16,14 @@ Não canso de ouvir a Maria:
 "Jooooooooooooãoooooooo, o café tá prontinho aqui. Veeemm!"
 '''
 
-print(re.findall(r'João|Maria',texto))
 
-print(re.findall(r'ad.....',texto))
-print(re.findall(r'[Jj]oão',texto))
-print(re.findall(r'[A-Z]aria',texto))
-print("teste")
-print(re.findall(r'JOão| mArIa',texto,flags=re.I)) #Ignora o tamanho da Lentr.
+print(re.findall(r'João|Maria|ad.....',texto))
+print(re.findall(r'João|Maria|ad.....',texto))
+
+
+print(re.findall(r'[Jj]oão|Maria',texto))
+print(re.findall(r'[a-zA-Z0-9]aria',texto))
+
+# IMPORTANTE - NÃO DIFERENCIAR MAIÚSCULAS E MINÚSCULAS
+print()
+print('Com o Flag: IGNORECASE: ',re.findall(r'JoãO|mArIa',texto, flags=re.I))

@@ -24,13 +24,7 @@ jã
 
 '''
 
-print(re.findall(r'jo+ão+', texto, flags=re.I))
-print(re.sub(r'jo*ão*','Felipe',texto,flags=re.I))
-print(re.sub(r'jo?ão*','Felipe',texto,flags=re.I))
-print(re.findall(r'jo{1,}ão{1,}',texto,flags=re.I))
+print(re.findall(r'Jo+ão+',texto, flags=re.I)) 
 
-print(re.findall(r've{1,5}m{1,2}',texto,flags=re.I))
 
-texto2 = 'Amias ama ser amada'
-
-print(re.findall(r'ama[do]{0,2}',texto2,flags=re.I))
+print(re.sub(r'Jo+ão+', 'Marcos', texto, flags=re.I))
