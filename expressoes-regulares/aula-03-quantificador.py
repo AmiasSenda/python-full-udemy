@@ -28,3 +28,15 @@ print(re.findall(r'Jo+ão+',texto, flags=re.I))
 
 
 print(re.sub(r'Jo+ão+', 'Marcos', texto, flags=re.I))
+
+print(re.sub(r'Jo*ão*', 'Marcelo', texto, flags=re.I))
+
+
+print(re.sub(r'jo?ão','Baby',texto, flags=re.I))
+
+print(re.findall(r'jo{1,}ão{1,}',texto,flags=re.I)) # Intervalo de letras
+print(re.findall(r've{1,3}m{1,2}',texto,flags=re.I)) # Intervalo de letras 
+
+texto2= 'João Ama ser amado'
+
+print(re.findall(r'ama[a-zA-Z]{0,}',texto2,flags=re.I))
