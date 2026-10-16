@@ -16,6 +16,8 @@ numeros = '''
 -946
 -987.654
 10..2
+abn123
+456A
 ++1213
 
 '''
@@ -39,6 +41,7 @@ print(regex2.findall(numeros))
 
 while True:
     numero = input('digite um número: ')
+    
     
 
     if (is_int(numero)):
