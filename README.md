@@ -6,4 +6,4 @@ Nesse momento o foco é:
 - Python Intermediário: a fazer
 - HTML E CSS
 - Comecei também com a leadingPage
-- Estou estudando também sobre Expressões regulares | Início
+- Estou estudando também sobre Expressões regulares | TERMINADO!!!! - 16/10/2026
