@@ -61,3 +61,17 @@ img {
     width: 40rem;
     height: 40rem;
 }
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    padding: 0.5rem;
+    text-align: left;
+    border: 0.1rem solid var( --light-gray-color);
+}
+
+tfoot td{
+    background-color: var(--light-gray-color);
+}
