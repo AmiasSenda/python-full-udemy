@@ -61,8 +61,14 @@ img {
     width: 40rem;
     height: 40rem;
 }
+
+.responsive-table{
+    overflow: hidden;
+    overflow-x: auto;
+}
 table{
     width: 100%;
+    min-width: 360px;
     border-collapse: collapse;
 }
 table caption{
@@ -72,6 +78,7 @@ table caption{
     margin-bottom: 1rem;
 }
 table td, table th{
+    white-space: nowrap ;
     padding: 1rem;
     text-align: left;
     border: 0.1rem solid var( --light-gray-color);
