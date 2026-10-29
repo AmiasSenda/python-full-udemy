@@ -88,3 +88,60 @@
 .contact-form {
     grid-column: span 2;
 }
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+
+}
+.form-grid legend {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+.form-group {
+    flex: 1 1 320px;
+
+}
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+
+}
+.form-group input,
+.form-group textarea{
+    border: none;
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 1.5rem;
+    outline: none;
+
+}
+.form-group input:focus,
+.form-group textarea:focus{
+    box-shadow: 0 0 10px 2px var(--secound-color);
+
+}
+.form-group button {
+    border: 0.5rem solid var(--white);
+    background: none;
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    background:var(--white);
+    color: var(--primary-color);
+
+}
+
+.form-group::placeholder{
+    color: var(--gray);
+}
