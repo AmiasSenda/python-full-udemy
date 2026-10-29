@@ -26,7 +26,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -162,4 +162,57 @@
 .footer p{
     margin: 0;
     padding: 3rem;
+}
+@media (max-width: 800px) {
+    .intro-content,
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustes para a secção Contact */
+    .intro-content {
+        min-height: auto;
+    }
+
+    .intro-text-content,
+    .intro-img {
+        height: auto;
+    }
+
+    .intro-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-form {
+        grid-column: 1 / -1;
+        min-width: 0;
+    }
+
+    .contact-form .form-grid {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        box-sizing: border-box;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
 }
