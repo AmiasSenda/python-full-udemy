@@ -22,6 +22,8 @@ print(re.findall(r'ola',string)) # retorna lista vazia porque essa palavra não 
 
 print(re.sub(r'regulares','verdadeiro',string, count=1)) #Altera apenas uma vez.
 print(re.sub(r'regulares','verdadeiro',string)) #Altera todas as vezes queencontrar.
+print(re.sub(r'a','xy',string))
+print(re.search(r'regu',string))
 
 # Compile
 
