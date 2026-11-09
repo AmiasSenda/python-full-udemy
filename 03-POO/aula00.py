@@ -5,13 +5,13 @@ class Pessoa:
     nivelAcademic = 'Engenheira Informática'
 
 class Pessoa0:
-    nome0 = 'Lucinda Gaio'
-    nascimento0 = '2004/04/12'
-    genero0 = 'F'
-    nivelAcademic0 = 'Engenheira Informática'
+    def __init__(self,nome,nascimento ):
+        nomeA = nome
+        data = nascimento
+
 
 p1 = Pessoa()
-p0 = Pessoa0()
+p0 = Pessoa0(p1.nome, p1.nascimento)
 print('DADOS PESSOAIS: ')
 print('Nome completo: ',p1.nome)
 print('Data de nascimento: ', p1.nascimento)
