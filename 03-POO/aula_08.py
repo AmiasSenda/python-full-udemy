@@ -1,3 +1,4 @@
+
 import json
 CAMINHO_ARQUIVO= 'aula_08.json'
 
@@ -12,6 +13,8 @@ p2 = Pessoa('Esposo', 30)
 p3 = Pessoa('Filho', 1)
 bd =  [vars(p1), vars(p2), vars(p3)]
 
-
-with open(CAMINHO_ARQUIVO, 'w') as arquivo:
-    json.dump(bd, arquivo, ensure_ascii=False, indent=2)
+def fazer_dump():
+    with open(CAMINHO_ARQUIVO, 'w') as arquivo:
+        print('DUMP')
+        print()
+        json.dump(bd, arquivo, ensure_ascii=False, indent=2)

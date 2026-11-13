@@ -1,10 +1,9 @@
 import json
-from aula_08 import CAMINHO_ARQUIVO, Pessoa
+from aula_08 import CAMINHO_ARQUIVO, Pessoa, fazer_dump
 
-
+fazer_dump()
 with open(CAMINHO_ARQUIVO, 'r') as arquivo:
     pessoas  = json.load(arquivo)
-
     
     p1 = Pessoa(**pessoas[0])
     p2 = Pessoa(**pessoas[1])
