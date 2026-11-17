@@ -14,7 +14,7 @@ class Carrinho:
     def listar_produtos(self):
         print()
         for produto in self._produtos:
-            print(produto.nome,produto.preco)
+            print(produto.nome, produto.preco)
         print()
 
 class Produto:
@@ -24,6 +24,8 @@ class Produto:
 
 carrinho = Carrinho()
 
-p1,p2,p3 = Produto('Banana',500.55), ('Morango',1050.44),('Pêssego',875.77)
-        
-print(carrinho.listar_produtos())
+p1= Produto('Banana',500.55)
+p2= Produto('Morango',1050.44)
+p3= Produto('Pêssego',875.77)
+carrinho.inserir_produtos(p1,p2,p3)
+carrinho.listar_produtos()
