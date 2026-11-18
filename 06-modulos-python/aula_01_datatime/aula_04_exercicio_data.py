@@ -16,8 +16,10 @@ while data_parcela < data_final:
     data_parcela += relativedelta(months=+1)
 
 numero_parcelas = len(data_parcelas)
+valor_parcela = valor_total / numero_parcelas
+
 
 print(numero_parcelas)
 
 for data in data_parcelas:
-    print(data)
+    print(data.strftime('%d/%m/%Y'), '| valor a pagar:',f'{valor_parcela:.2f} KZS')
