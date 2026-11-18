@@ -23,3 +23,8 @@ print(numero_parcelas)
 
 for data in data_parcelas:
     print(data.strftime('%d/%m/%Y'), '| valor a pagar:',f'{valor_parcela:.2f} KZS')
+
+
+print()
+print('Você pegou: ', valor_total,'KZS para pagar em ', delta_anos,  '(',numero_parcelas,'meses) total a ser pago por mês: ',f'{valor_parcela:.2f} KZS')
+print()
